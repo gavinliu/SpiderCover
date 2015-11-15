@@ -12,3 +12,6 @@ class CoverItem(scrapy.Item):
     # name = scrapy.Field()
     title = scrapy.Field()
     cover = scrapy.Field()
+    artistName = scrapy.Field()
+    artistName2 = scrapy.Field()
+    artistID = scrapy.Field()
