@@ -10,8 +10,16 @@ import scrapy
 class CoverItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    title = scrapy.Field()
+    album_id = scrapy.Field()
+    album_name = scrapy.Field()
     cover = scrapy.Field()
-    artistName = scrapy.Field()
-    artistName2 = scrapy.Field()
-    artistID = scrapy.Field()
+    cover_path = scrapy.Field()
+    cover_color = scrapy.Field()
+    cover_width = scrapy.Field()
+    cover_height = scrapy.Field()
+    
+    artist_id = scrapy.Field()
+    artist_name = scrapy.Field()
+    artist_name2 = scrapy.Field()
+
+

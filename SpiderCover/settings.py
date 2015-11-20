@@ -15,8 +15,13 @@ SPIDER_MODULES = ['SpiderCover.spiders']
 NEWSPIDER_MODULE = 'SpiderCover.spiders'
 
 ITEM_PIPELINES = {
-    'SpiderCover.pipelines.SpidercoverPipeline': 800,
+    'SpiderCover.pipelines.DownloadCoverPipeline': 100,
+    # 'SpiderCover.pipelines.SpidercoverPipeline': 800,
+    'SpiderCover.pipelines.SaveCoverPipeline': 805,
 }
+
+DOWNLOAD_DELAY = 2
+REACTOR_THREADPOOL_MAXSIZE = 1
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'SpiderCover (+http://www.yourdomain.com)'
